@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大学時間割マネージャー</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // 'class'ベースのダークモードを有効にする
+      }
+    </script>
+    <style>
+      /* For custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+         background: rgba(255, 255, 255, 0.4);
+      }
+
+      /* Simple light/dark theme background */
+      .glassmorphism-bg {
+        background-color: #f3f4f6; /* gray-100 */
+        transition: background-color 0.3s ease-in-out;
+      }
+      .dark .glassmorphism-bg {
+        background-color: #111827; /* gray-900 */
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out forwards;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.2.1/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-CrmKoVSp.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

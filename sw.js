@@ -6,8 +6,8 @@ const CACHE_NAME = 'tablit-cache-v1.1.0';
 // キャッシュするファイルのリスト
 // 基本的なファイルのみをキャッシュし、動的なコンテンツや外部CDNはキャッシュしない戦略
 const urlsToCache = [
-  '/',
-  '/index.html'
+  './',
+  './index.html'
 ];
 
 // Service Workerのインストールイベント
